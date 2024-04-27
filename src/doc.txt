@@ -1,0 +1,4 @@
+primary color - #373939
+secondary color - #424949
+primary green - #2ECC71
+primary white - whitesmoke
