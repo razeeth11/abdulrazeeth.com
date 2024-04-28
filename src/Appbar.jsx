@@ -70,9 +70,10 @@ export function Appbar() {
         border: "0.5px solid #424949",
         padding: "10px 15px",
         borderRadius: "5px",
+        boxShadow:"1px 1px 7px #424949"
       }}
     >
-      <Grid xs={4}>
+      <Grid>
         <Box sx={{ display: "flex" }}>
           <Typography
             sx={{
