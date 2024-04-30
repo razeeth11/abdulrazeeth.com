@@ -6,6 +6,7 @@ import { Box, Button, Grid, Tooltip, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useEffect, useState } from "react";
+import boy from "./assets/devBoy.png";
 
 export function MainContent() {
   const theme = useTheme();
@@ -121,7 +122,7 @@ export function MainContent() {
       <Grid sx={{ marginRight: !match1000 && "100px", position: "relative" }}>
         <Box>
           <img
-            src="there-is-cartoon-boy-with-glasses-using-laptop-generative-ai_925897-97983-removebg-preview.png"
+            src={boy}
             alt=""
             style={{ width: "100%" }}
           />
