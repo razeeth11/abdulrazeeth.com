@@ -1,16 +1,16 @@
-import './App.css';
-import { Appbar } from './Appbar';
-import { MainContent } from './MainContent';
+import { AboutPage } from "./AboutPage";
+import "./App.css";
+import { Appbar } from "./Appbar";
+import { MainContent } from "./MainContent";
 
 function App() {
-
   return (
     <>
-      <Appbar/>
-      <MainContent/>
+      <Appbar />
+      <MainContent />
+      <AboutPage />
     </>
-  )
+  );
 }
 
-
-export default App
+export default App;
