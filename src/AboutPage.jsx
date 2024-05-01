@@ -27,8 +27,10 @@ export function AboutPage() {
         display: "flex",
         flexDirection: matchmd && "column-reverse",
         gap: matchmd ? "70px" : "30px",
-        margin: "150px 0",
+        margin:"60px 0",
+        padding: "60px 0 0 0",
         alignItems: matchmd ? "center" : "end",
+        borderTop:"1px solid rgba(46, 204, 113, 0.3);",
       }}
     >
       <Grid>
@@ -76,7 +78,7 @@ export function AboutPage() {
           </Box>
         </Stack>
       </Grid>
-      <Grid>
+      <Grid sx={{padding:"20px 20px 0 20px"}}>
         <Box sx={{ display: "flex", flexDirection: "column", gap: "20px" }}>
           <Typography
             sx={{

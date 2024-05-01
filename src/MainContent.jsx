@@ -70,7 +70,7 @@ export function MainContent() {
         gap: match1000 && "40px",
         alignItems: "center",
         justifyContent: "space-between",
-        marginTop: match1000 && "50px",
+        marginTop: "50px",
       }}
     >
       <Grid sx={{ display: "flex", flexDirection: "column" }}>
@@ -120,7 +120,7 @@ export function MainContent() {
           </Tooltip>
         </Box>
       </Grid>
-      <Grid sx={{ marginRight: !match1000 && "100px", position: "relative" }}>
+      <Grid sx={{ marginRight: !match1000 && "60px", position: "relative" }}>
         <Box>
           <img
             src={boy}
@@ -130,7 +130,7 @@ export function MainContent() {
         </Box>
         <Typography
           sx={absoluteContent}
-          style={{ top: "150px", left: matchsm ? "-20px" : "-50px" }}
+          style={{ top: "150px", left: matchsm ? "0px" : "-50px" }}
         >
           {" "}
           <PhonelinkIcon sx={{ fontSize: "26px", color: "#2ECC71" }} />{" "}
