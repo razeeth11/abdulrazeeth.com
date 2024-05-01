@@ -1,4 +1,3 @@
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ComputerIcon from "@mui/icons-material/Computer";
 import HomeIcon from "@mui/icons-material/Home";
 import HowToRegIcon from "@mui/icons-material/HowToReg";
@@ -9,10 +8,7 @@ import {
   Box,
   Button,
   Grid,
-  IconButton,
-  MenuList,
-  Popover,
-  Typography
+  IconButton, Typography
 } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
@@ -62,7 +58,6 @@ export function Appbar() {
 
   return (
     <Grid
-      container
       sx={{
         display: "flex",
         alignItems: "center",
@@ -107,6 +102,7 @@ export function Appbar() {
           </Typography>
         </Box>
       </Grid>
+      <Grid>
       {!match900 ? (
         <Grid sx={{ display: "flex", alignItems: "center", gap: "30px" }}>
           <Typography sx={navLinks}>Home</Typography>
@@ -126,24 +122,12 @@ export function Appbar() {
           <MenuIcon sx={{ fontSize: "28px" }} />
         </IconButton>
       )}
+      </Grid>
       {!match1100 && (
         <Grid
-          sx={{ display: "flex", justifyContent: "end", marginLeft: "auto" }}
+          sx={{ display: "flex" }}
         >
           <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
-            <Typography
-              onClick={handleClick}
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                color: "#99A3A4",
-                fontSize: "14px",
-                cursor: "pointer",
-                "&:hover": { color: "whitesmoke" },
-              }}
-            >
-              {language} <ArrowDropDownIcon />
-            </Typography>
             <Button
               sx={{
                 textTransform: "capitalize",
@@ -161,30 +145,6 @@ export function Appbar() {
           </Box>
         </Grid>
       )}
-
-      <Popover
-        id={id}
-        open={open}
-        anchorEl={anchorEl}
-        onClose={handleClose}
-        anchorOrigin={{
-          vertical: "bottom",
-          horizontal: "right",
-        }}
-        transformOrigin={{
-          vertical: "top",
-          horizontal: "right",
-        }}
-      >
-        <Box>
-          <MenuList
-            onClick={() => setLanguage(language == "EN" ? "عربي" : "EN")}
-            sx={languageLinks}
-          >
-            {language == "EN" ? "عربي" : "EN"}
-          </MenuList>
-        </Box>
-      </Popover>
 
       <TemporaryDrawer openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} />
     </Grid>

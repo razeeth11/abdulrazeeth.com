@@ -102,8 +102,9 @@ export function MainContent() {
               whiteSpace: "nowrap",
             }}
           >
-            &lt;Frontend Developer/&gt;
+            &lt;{career}&gt;
           </span>{" "}
+          <br/>
           Building User-Friendly Websites & Applications.
         </Typography>
         <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
