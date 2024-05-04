@@ -42,6 +42,7 @@ export function Appbar() {
   const match1100 = useMediaQuery(theme.breakpoints.down(1100));
   const match900 = useMediaQuery(theme.breakpoints.down("md"));
   const matchsm = useMediaQuery(theme.breakpoints.down("sm"));
+  const matchlg = useMediaQuery(theme.breakpoints.up("sm"));
 
   const navLinks = {
     fontSize: "16px",
@@ -61,11 +62,11 @@ export function Appbar() {
       sx={{
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-between",
+        justifyContent: matchsm ? "space-between" : "space-around",
         border: "0.5px solid #424949",
         padding: "10px 15px",
         borderRadius: "5px",
-        boxShadow:"1px 1px 7px #424949"
+        boxShadow:"1px 1px 7px #424949",
       }}
     >
       <Grid>

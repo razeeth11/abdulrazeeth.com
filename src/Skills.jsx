@@ -98,9 +98,15 @@ export function Skills() {
         </Box>
         <Box>
           <Box sx={skillBox}>
+            <Mui />
+          </Box>
+          <Typography sx={skillsText}>Material UI</Typography>
+        </Box>
+        <Box>
+          <Box sx={skillBox}>
             <Node />
           </Box>
-          <Typography sx={skillsText}>Node</Typography>
+          <Typography sx={skillsText}>Node Js</Typography>
         </Box>
         <Box>
           <Box sx={skillBox}>
@@ -137,12 +143,6 @@ export function Skills() {
             <Githuh />
           </Box>
           <Typography sx={skillsText}>Github</Typography>
-        </Box>
-        <Box>
-          <Box sx={skillBox}>
-            <Mui />
-          </Box>
-          <Typography sx={skillsText}>Material UI</Typography>
         </Box>
         <Box>
           <Box sx={skillBox}>

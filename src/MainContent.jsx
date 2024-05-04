@@ -69,7 +69,7 @@ export function MainContent() {
         flexDirection: match1000 && "column",
         gap: match1000 && "40px",
         alignItems: "center",
-        justifyContent: "space-between",
+        justifyContent: "space-around",
         marginTop: "50px",
       }}
     >
@@ -120,7 +120,7 @@ export function MainContent() {
           </Tooltip>
         </Box>
       </Grid>
-      <Grid sx={{ marginRight: !match1000 && "60px", position: "relative" }}>
+      <Grid sx={{position: "relative" }}>
         <Box>
           <img
             src={boy}
