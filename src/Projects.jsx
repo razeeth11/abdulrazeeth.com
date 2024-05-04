@@ -44,6 +44,7 @@ export function Projects() {
         "React",
         "Express Js",
         "MongoDB",
+        "Material UI"
       ],
       projectlive: "https://swiggy-desktop-app.netlify.app/",
       projectCode: "https://github.com/razeeth11/Swiggy-Clone-Desktop-App",
@@ -61,6 +62,7 @@ export function Projects() {
         "React",
         "Express Js",
         "MongoDB",
+        "Material UI"
       ],
       projectlive: "https://movie-app-react-express.netlify.app/",
       projectCode: "https://github.com/razeeth11/Movie-App",
@@ -70,7 +72,7 @@ export function Projects() {
       projectName: "Tic Tac Toe Game",
       projectDescription:
         "A classic Tic Tac Toe game with intuitive UI, multiplayer support, and strategic gameplay for endless entertainment.",
-      projectLan: ["HTML", "Css", "Javascript", "React"],
+      projectLan: ["HTML", "Css", "Javascript", "React","Material UI"],
       projectlive: "https://tic-tac-toe-gamemodel.netlify.app/",
       projectCode: "https://github.com/razeeth11/Tic-Tac-Toe-Game",
     },
@@ -131,11 +133,11 @@ export function Projects() {
               height: "360px",
               borderRadius: "15px",
               background: "#373939",
-              boxShadow: "0.5px 0.5px 7px #666",
-              padding: "8px",
+              border:"0.5px solid #666",
+              padding: "5px",
             }}
           >
-            <Box sx={{ width: "260px", height: "300px" }}>
+            <Box sx={{ maxWidth: "260px",minHeight:"150px", maxHeight: "300px" }}>
               <img
                 src={item.projectImg}
                 alt=""
@@ -154,18 +156,20 @@ export function Projects() {
                 gap: "10px",
                 padding: "5px",
                 cursor: "pointer",
+                marginTop:"10px"
               }}
             >
-              <Typography sx={{ fontSize: "12px", color: "whitesmoke" }}>
+              <Typography sx={{ fontSize: "14px", color: "whitesmoke" }}>
                 {item.projectName}
               </Typography>
               <Typography
                 sx={{
                   height: "75px",
-                  color: "grey",
+                  color: "whitesmoke",
                   overflow: "hidden",
                   textOverflow: "ellipsis",
                   fontSize: "10px",
+                  fontWeight:400
                 }}
               >
                 {item.projectDescription}
@@ -224,10 +228,10 @@ export function Projects() {
         }}
       >
         <Button sx={link}>
-          <GitHubIcon /> &nbsp;&nbsp; See more on GitHub
+          <GitHubIcon /> &nbsp;&nbsp; <Link href="https://github.com/razeeth11?tab=repositories" sx={{textDecoration:"none",color: "#2ECC71",}}>See more on GitHub</Link>
         </Button>
         <Button sx={link}>
-          <AirplayIcon /> &nbsp;&nbsp; See more on Netlify
+          <AirplayIcon /> &nbsp;&nbsp; <Link href="https://app.netlify.com/teams/razeeth11/sites" sx={{textDecoration:"none",color: "#2ECC71",}}>See more on Netlify</Link>
         </Button>
       </Grid>
     </Grid>
